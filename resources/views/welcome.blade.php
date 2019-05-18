@@ -16,6 +16,12 @@
         <h1>Список файлов в корне проекта</h1>
     </div>
     <div class="col-md-12">
+        <form action="{{route('update-cache')}}" method="POST">
+            {!! csrf_field() !!}
+            <button type="submit">Обновить</button>
+        </form>
+    </div>
+    <div class="col-md-12">
         <table class="table table-hover">
             <thead>
                 <tr>

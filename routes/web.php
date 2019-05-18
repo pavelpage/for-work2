@@ -11,4 +11,5 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'HomeController@index')->name('home');
+Route::post('/update-cache', 'HomeController@updateCache')->name('update-cache');
